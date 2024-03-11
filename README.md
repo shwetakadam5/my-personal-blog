@@ -86,7 +86,7 @@ my-personal-blog
 │   ├── css
 │   │   ├── blog.css
 │   │   ├── form.css
-│   │   └── styles.css
+│   │   └── style.css
 │   └── js
 │       ├── blog.js
 │       ├── form.js
