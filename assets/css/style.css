@@ -17,6 +17,12 @@ body {
     margin: 0;    
 }
 
+main {
+    
+display:flex;
+align-items: center;
+}
+
 h1,
 h2,
 h3,
@@ -36,6 +42,7 @@ h1 {
 
 h2 {
     font-size: 3.5rem;
+    text-align: center;
 }
 
 h3 {
@@ -53,6 +60,8 @@ h5 {
 h6 {
     font-size: 1.5rem;
 }
+
+
 
 
 .header-container {
@@ -117,12 +126,66 @@ button{
 }
 
 
-.toggle-button{
-    border:0px;
-    border-radius:50%;
-   
-    color:#fad905;
-    background-color: white;
-    display: inline;
+
+.side-container{
+    width : 50vw;
+    height :100vh;
+
+    
 }
 
+.story_shape {
+    width: 55%;
+    height: 50%; 
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%); 
+    position: relative; 
+    margin-top: 45%;
+    margin-left: 25%;
+
+}
+
+ .story_img {
+    height: 100%;
+    transform: translateX(-4rem);  
+    backface-visibility: hidden; 
+ }
+ 
+ .story_caption {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    text-transform: uppercase; 
+    font-size: 1.7rem; 
+    text-align: center;  
+    backface-visibility: hidden; 
+ }
+
+ input, label,textarea,button{
+    width: 50vw;
+ }
+
+ aside{
+    border: 0px double black;
+    border-width :0px 8px 0px 0px; 
+   
+ }
+
+ .form-container{
+    margin: 25px;
+ }
+
+.submit-button{
+    color:black;
+    background-color: white;
+
+}
+.submit-button.lightMode{
+   
+    margin :0px;
+    color:white;
+    background-color: black;
+}

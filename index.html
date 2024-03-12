@@ -31,20 +31,47 @@
     <main>
         <aside class="side-container">
             <!-- Picture displayed-->
-            <figure class="blog-picture">
+            <!-- <figure class="blog-picture">
                 <figcaption></figcaption>
+            </figure> -->
+
+            <figure class="story_shape">                
+                <img src="https://www.desktopbackground.org/p/2014/10/30/848009_neon-orange-color-backgrounds_1170x1057_h.jpg" title="Neon Orange Color Backgrounds Desktop Background" class="story_img"/>
+                <figcaption class="story_caption">My Blog</figcaption>
             </figure>
         </aside>
 
-        <section class="form-container">
-            <h1></h1>
-            <form id="form">
-                <input type="text" id="username" placeholder="username" />
-                <input type="text" id="title" placeholder="title" />
-                <input type="text" id="content" placeholder="content" />
-                <button id="submit">Submit</button>
-            </form>
+        <div><section class="form-container">
+            <h2>What's on your mind</h2>                    
+            <form>
+                <ul>
+                  <li>
+                    <label for="userName">User Name</label>
+                </li>
+                <li>
+                    <input type="text" name="user-name" id="user-name" placeholder="Jane" />
+                  </li>
+                  <li>
+                    <label for="title">Title</label>
+                </li>
+                <li>
+                    <input type="text" name="title" id="title" placeholder="ABSS" />
+                  </li>
+                  <li>
+                    <label for="content">Content</label>
+                </li>
+                <li>
+                    <textarea id="" name="content"></textarea>
+                  </li>
+                </ul>
+                <!-- <div class="submit-button darkMode"> -->
+                <button id="submit" class="submit-button lightMode">SUBMIT</button>
+                <!-- </div> -->
+              </form>      
+                  
+             
         </section>
+    </div>
     </main>
     
     <footer class="footer-container">
