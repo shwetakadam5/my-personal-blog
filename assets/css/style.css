@@ -1,26 +1,21 @@
 * {
     box-sizing: border-box;
-
 }
-
 
 html {
     font-size: 62.5%;
 }
 
-
-
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.75rem;
     line-height: 1.5;
-    margin: 0;    
+    margin: 0;
 }
 
 main {
-    
-display:flex;
-align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 h1,
@@ -32,7 +27,6 @@ h6 {
     margin-bottom: 0.625rem;
     font-weight: 700;
     line-height: 1.1;
-
 }
 
 h1 {
@@ -61,20 +55,23 @@ h6 {
     font-size: 1.5rem;
 }
 
-
-
+input,
+label,
+textarea {
+    width: 50vw;
+}
 
 .header-container {
     padding: 1rem;
     height: 10vh;
     text-align: right;
     background: white;
-    color: black;       
+    color: black;
     border: 0px double black;
-    border-width :0px 0px 8px 0px; 
+    border-width: 0px 0px 8px 0px;
     background-clip: padding-box;
     box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.2);
-     
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -82,110 +79,95 @@ h6 {
 }
 
 .header-container.darkMode {
-    background-color:black;    
-    color:white;     
-  }
-
-
-
-button{
-    padding: 5px;
-    margin :10px;
-
-}
-.back-button{
-    color:white;
     background-color: black;
-
-}
-.back-button.darkMode{
-    
-    color:black;
-    background-color: white;
+    color: white;
 }
 
-
-
-
-.lightmode-button{
-    border:0px;
-    border-radius:50%;
-   
-    color:#fad905;
-    background-color: white;
-    display: inline;
+aside {
+    border: 0px double black;
+    border-width: 0px 8px 0px 0px;
 }
 
-.darkmode-button{
-    border:0px;
-    border-radius:50%;
-   
-    color:#fad905;
-    background-color: grey;
-    display: none;
+.form-container {
+    margin: 25px;
 }
 
-
-
-.side-container{
-    width : 50vw;
-    height :100vh;
-
-    
+/* Styling for the picture section on the index html */
+.side-container {
+    width: 50vw;
+    height: 100vh;
 }
 
 .story_shape {
     width: 55%;
-    height: 50%; 
+    height: 50%;
     -webkit-shape-outside: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%); 
-    position: relative; 
+    clip-path: circle(50% at 50% 50%);
+    position: relative;
     margin-top: 45%;
     margin-left: 25%;
-
 }
 
- .story_img {
+.story_img {
     height: 100%;
-    transform: translateX(-4rem);  
-    backface-visibility: hidden; 
- }
- 
- .story_caption {
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    color: white; 
-    text-transform: uppercase; 
-    font-size: 1.7rem; 
-    text-align: center;  
-    backface-visibility: hidden; 
- }
-
- input, label,textarea,button{
-    width: 50vw;
- }
-
- aside{
-    border: 0px double black;
-    border-width :0px 8px 0px 0px; 
-   
- }
-
- .form-container{
-    margin: 25px;
- }
-
-.submit-button{
-    color:black;
-    background-color: white;
-
+    transform: translateX(-4rem);
+    backface-visibility: hidden;
 }
-.submit-button.lightMode{
-   
-    margin :0px;
-    color:white;
+
+.story_caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    backface-visibility: hidden;
+}
+
+/* Styling for buttons */
+
+button {
+    padding: 5px;
+    margin: 10px;
+}
+
+.back-button {
+    color: white;
+    background-color: black;
+}
+
+.back-button.darkMode {
+    color: black;
+    background-color: white;
+}
+
+.lightmode-button {
+    border: 0px;
+    border-radius: 50%;
+    color: #fad905;
+    background-color: white;
+    display: inline;
+}
+
+.darkmode-button {
+    border: 0px;
+    border-radius: 50%;
+    color: #fad905;
+    background-color: grey;
+    display: none;
+}
+
+.submit-button {
+    color: black;
+    background-color: white;
+    width: 50vw;
+}
+
+.submit-button.lightMode {
+    margin: 0px;
+    color: white;
     background-color: black;
 }
