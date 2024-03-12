@@ -62,7 +62,10 @@ h6 {
     background: white;
     color: black;       
     border: 0px double black;
-    border-width :0px 0px 8px 0px;  
+    border-width :0px 0px 8px 0px; 
+    background-clip: padding-box;
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.2);
+     
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
