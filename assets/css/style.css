@@ -68,7 +68,7 @@ textarea {
     background: white;
     color: black;
     border: 0px double black;
-    border-width: 0px 0px 8px 0px;
+    border-width: 0px 0px 5px 0px;
     background-clip: padding-box;
     box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.2);
 
@@ -81,21 +81,39 @@ textarea {
 .header-container.darkMode {
     background-color: black;
     color: white;
+    border-color: whitesmoke;
+    
+}
+
+.form-container {
+    margin: 25px;    
+}
+
+.form-section.darkMode {   
+    background-color: grey;
+    color: white;
+}
+
+.body-container.darkMode{
+    background-color: dimgrey;
+    color: white;
 }
 
 aside {
     border: 0px double black;
-    border-width: 0px 8px 0px 0px;
-}
-
-.form-container {
-    margin: 25px;
+    border-width: 0px 5px 0px 0px;
 }
 
 /* Styling for the picture section on the index html */
 .side-container {
     width: 50vw;
     height: 100vh;
+}
+
+.side-container.darkMode {
+    background-color: dimgrey;
+    color: white;
+    border-color:white;
 }
 
 .story_shape {
@@ -156,18 +174,18 @@ button {
     border: 0px;
     border-radius: 50%;
     color: #fad905;
-    background-color: grey;
+    background-color: dimgrey;
     display: none;
 }
 
-.submit-button {
-    color: black;
-    background-color: white;
-    width: 50vw;
-}
-
-.submit-button.lightMode {
+.submit-button{
     margin: 0px;
+    width: 50vw;
     color: white;
     background-color: black;
 }
+.submit-button.darkMode {    
+    color: black;
+    background-color: dimgrey;   
+}
+
