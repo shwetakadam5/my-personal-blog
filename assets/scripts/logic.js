@@ -24,32 +24,54 @@ function loadFromLocalStorage() {
 
 // Attach event listener to light mode button element
 lightModeEl.addEventListener('click', function () {
-    console.log("In event listerner of light");
-    headerContainer.classList.add('darkMode');
-    asideContainer.classList.add('darkMode');
-    formContainer.classList.add('darkMode');
-    bodyContainer.classList.add('darkMode');
-    submitButtonEl.classList.add('darkMode');
+
     lightModeEl.setAttribute('style', 'display: none');
-    darkModeEl.setAttribute('style', 'display: inline')
+    darkModeEl.setAttribute('style', 'display: inline');
+
+    if (headerContainer != null) {
+        headerContainer.classList.add('darkMode');
+    }
+    if (asideContainer != null) {
+        asideContainer.classList.add('darkMode');
+    }
+    if (formContainer != null) {
+        formContainer.classList.add('darkMode');
+    }
+    if (formContainer != null) {
+        bodyContainer.classList.add('darkMode');
+    }
+    if (submitButtonEl != null) {
+        submitButtonEl.classList.add('darkMode');
+    }
     if (backButtonEl != null) {
         backButtonEl.classList.add('darkMode');
     }
-
-
 
     window.localStorage.setItem('theme', 'dark');
 });
 
 // Attach event listener to dark mode button element
 darkModeEl.addEventListener('click', function () {
-    headerContainer.classList.remove('darkMode');
-    asideContainer.classList.remove('darkMode');
-    formContainer.classList.remove('darkMode');
-    bodyContainer.classList.remove('darkMode');
-    submitButtonEl.classList.remove('darkMode');
-    darkModeEl.setAttribute('style', 'display: none');
+
     lightModeEl.setAttribute('style', 'display: inline');
+    darkModeEl.setAttribute('style', 'display: none');
+
+
+    if (headerContainer != null) {
+        headerContainer.classList.remove('darkMode');
+    }
+    if (asideContainer != null) {
+        asideContainer.classList.remove('darkMode');
+    }
+    if (formContainer != null) {
+        formContainer.classList.remove('darkMode');
+    }
+    if (bodyContainer != null) {
+        bodyContainer.classList.remove('darkMode');
+    }
+    if (submitButtonEl != null) {
+        submitButtonEl.classList.remove('darkMode');
+    }
     if (backButtonEl != null) {
         backButtonEl.classList.remove('darkMode');
     }

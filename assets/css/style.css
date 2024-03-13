@@ -26,7 +26,7 @@ h5,
 h6 {
     margin-bottom: 0.625rem;
     font-weight: 700;
-    line-height: 1.1;
+    line-height: 1.1;    
 }
 
 h1 {
@@ -35,8 +35,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3.5rem;
-    text-align: center;
+    font-size: 3.5rem;    
 }
 
 h3 {
@@ -45,6 +44,7 @@ h3 {
 
 h4 {
     font-size: 2.5rem;
+    text-align: center;
 }
 
 h5 {
@@ -70,8 +70,6 @@ textarea {
     border: 0px double black;
     border-width: 0px 0px 5px 0px;
     background-clip: padding-box;
-    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.2);
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -90,7 +88,7 @@ textarea {
 }
 
 .form-section.darkMode {   
-    background-color: grey;
+    background-color: dimgrey;
     color: white;
 }
 
@@ -123,8 +121,8 @@ aside {
     shape-outside: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     position: relative;
-    margin-top: 45%;
-    margin-left: 25%;
+    margin-top: 30%;
+    margin-left: 20%;
 }
 
 .story_img {
@@ -185,7 +183,7 @@ button {
     background-color: black;
 }
 .submit-button.darkMode {    
-    color: black;
-    background-color: dimgrey;   
+    color: white;
+    background-color: black;  
 }
 
