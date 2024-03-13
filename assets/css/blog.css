@@ -1,0 +1,37 @@
+.footer-container {
+    padding: 1rem;
+    height: 15vh;
+    text-align: right;
+    background: white;
+    color: black;
+    border: 0px double black;
+    border-width: 5px 0px 0px 0px;
+    background-clip: padding-box;
+
+}
+
+.footer-container.darkMode {
+    background-color: black;
+    color: white;
+    border-color: whitesmoke;
+
+}
+
+.footer-nav {
+    text-align: left;
+}
+
+.footer-nav .font-nav {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.blog-container {
+    height: 70vh;
+
+}
+
+.blog-container.darkMode {
+    background-color: dimgrey;
+    color: white;
+}

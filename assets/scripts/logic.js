@@ -6,6 +6,9 @@ const headerContainer = document.querySelector('.header-container');
 const asideContainer = document.querySelector('.side-container');
 const formContainer = document.querySelector('.form-section');
 const bodyContainer = document.querySelector('.body-container');
+const footerContainer = document.querySelector('.footer-container');
+const blogContainer = document.querySelector('.blog-container');
+
 
 // Function to refresh the local storage and set the default theme to the page.
 function loadFromLocalStorage() {
@@ -18,7 +21,6 @@ function loadFromLocalStorage() {
 
         localStorage.setItem('theme', 'light');
     }
-
 }
 
 
@@ -31,14 +33,20 @@ lightModeEl.addEventListener('click', function () {
     if (headerContainer != null) {
         headerContainer.classList.add('darkMode');
     }
+    if (bodyContainer != null) {
+        bodyContainer.classList.add('darkMode');
+    }
     if (asideContainer != null) {
         asideContainer.classList.add('darkMode');
     }
     if (formContainer != null) {
         formContainer.classList.add('darkMode');
     }
-    if (formContainer != null) {
-        bodyContainer.classList.add('darkMode');
+    if (blogContainer != null) {
+        blogContainer.classList.add('darkMode');
+    }
+    if (footerContainer != null) {
+        footerContainer.classList.add('darkMode');
     }
     if (submitButtonEl != null) {
         submitButtonEl.classList.add('darkMode');
@@ -50,15 +58,18 @@ lightModeEl.addEventListener('click', function () {
     window.localStorage.setItem('theme', 'dark');
 });
 
+
 // Attach event listener to dark mode button element
 darkModeEl.addEventListener('click', function () {
 
     lightModeEl.setAttribute('style', 'display: inline');
     darkModeEl.setAttribute('style', 'display: none');
 
-
     if (headerContainer != null) {
         headerContainer.classList.remove('darkMode');
+    }
+    if (bodyContainer != null) {
+        bodyContainer.classList.remove('darkMode');
     }
     if (asideContainer != null) {
         asideContainer.classList.remove('darkMode');
@@ -66,8 +77,11 @@ darkModeEl.addEventListener('click', function () {
     if (formContainer != null) {
         formContainer.classList.remove('darkMode');
     }
-    if (bodyContainer != null) {
-        bodyContainer.classList.remove('darkMode');
+    if (blogContainer != null) {
+        blogContainer.classList.remove('darkMode');
+    }
+    if (footerContainer != null) {
+        footerContainer.classList.remove('darkMode');
     }
     if (submitButtonEl != null) {
         submitButtonEl.classList.remove('darkMode');
@@ -76,6 +90,7 @@ darkModeEl.addEventListener('click', function () {
         backButtonEl.classList.remove('darkMode');
     }
 });
+
 
 // Load existing data from local storage on page load
 window.onload = loadFromLocalStorage;
