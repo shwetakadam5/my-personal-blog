@@ -36,11 +36,35 @@ Follow these instructions to create your project and deploy it to GitHub Pages:
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+Link for the repository :
+https://github.com/shwetakadam5/my-personal-blog
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
+Link for the webpage :
+https://shwetakadam5.github.io/my-personal-blog/
 
-![alt text](assets/images/screenshot.png)
+Light Mode :
+
+![alt text](assets/images/my-blog-homepage-LightMode.jpeg)
+
+![alt text](assets/images/my-blog-listofblogs-lightmode.jpeg)
+
+Dark Mode :
+
+
+![alt text](assets/images/my-blog-homepage-DarkMode.jpeg)
+
+![alt text](assets/images/my-blog-listofblogs-darkmode.jpeg)
+
+
+Error Messages :
+
+![alt text](assets/images/my-blog-ErrorMessage1.jpeg)
+![alt text](assets/images/my-blog-ErrorMessage2.jpeg)
+![alt text](assets/images/my-blof-ErrorMessage3.jpeg)
+
+
+Local Storage :
+![alt text](assets/images/my-blog-Localstorage-blogentries.png)
 
 
 ## User Story
