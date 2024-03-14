@@ -51,9 +51,7 @@ function displayMessage(type, message) {
     } else if (blogInputContent === '') {
         displayMessage('error', 'Content cannot be blank');
         event.preventDefault();       
-    } else {
-      displayMessage('success', 'Submitted successfully');
-      
+    } else {      
       blogDetailsObj.username = userInputName;
       blogDetailsObj.blogtitle = blogInputTitle;
       blogDetailsObj.blogcontent = blogInputContent;
