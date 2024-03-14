@@ -5,6 +5,7 @@
     --darkmode-background : dimgrey;
     --error-color: firebrick;   
     --pale-light: whitesmoke;
+    --theme-icon-color :#fad905;
 
 }
 
@@ -176,7 +177,7 @@ button {
 .lightmode-button {
     border: 0rem;
     border-radius: 50%;
-    color: #fad905;
+    color: var(--theme-icon-color);
     background-color: var(--light);
     display: inline;
 }
@@ -184,7 +185,7 @@ button {
 .darkmode-button {
     border: 0rem;
     border-radius: 50%;
-    color: #fad905;
+    color: var(--theme-icon-color);
     background-color: var(--darkmode-background);
     display: none;
 }
