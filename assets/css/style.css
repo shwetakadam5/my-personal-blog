@@ -80,8 +80,8 @@ textarea {
     text-align: right;
     background: var(--light);
     color: var(--dark);
-    border: 0px double var(--dark);
-    border-width: 0px 0px 5px 0px;
+    border: 0rem double var(--dark);
+    border-width: 0rem 0rem 0.5rem 0rem;
     background-clip: padding-box;
     display: flex;
     flex-wrap: wrap;
@@ -97,7 +97,7 @@ textarea {
 }
 
 .form-container {
-    margin: 25px;
+    margin: 2.5rem;
 }
 
 .form-section.darkMode {
@@ -111,8 +111,8 @@ textarea {
 }
 
 aside {
-    border: 0px double var(--dark);
-    border-width: 0px 5px 0px 0px;
+    border: 0rem double var(--dark);
+    border-width: 0rem 0.5rem 0rem 0rem;
 }
 
 /* Styling for the picture section on the index html */
@@ -159,8 +159,8 @@ aside {
 /* Styling for buttons */
 
 button {
-    padding: 5px;
-    margin: 10px;
+    padding: 0.5rem;
+    margin: 1rem;
 }
 
 .back-button {
@@ -174,7 +174,7 @@ button {
 }
 
 .lightmode-button {
-    border: 0px;
+    border: 0rem;
     border-radius: 50%;
     color: #fad905;
     background-color: var(--light);
@@ -182,7 +182,7 @@ button {
 }
 
 .darkmode-button {
-    border: 0px;
+    border: 0rem;
     border-radius: 50%;
     color: #fad905;
     background-color: var(--darkmode-background);
@@ -190,7 +190,7 @@ button {
 }
 
 .submit-button {
-    margin: 0px;
+    margin: 0rem;
     width: 50vw;
     color: var(--light);
     background-color: var(--dark);
@@ -211,7 +211,7 @@ button {
     }
 
     aside {
-        border-width: 0px 0px 5px 0px;
+        border-width: 0rem 0rem 0.5rem 0rem;
     }
 
     .side-container {
@@ -260,7 +260,7 @@ button {
     }
 
     aside {
-        border-width: 0px 0px 5px 0px;
+        border-width: 0rem 0rem 5rem 0rem;
     }
 
     .side-container {

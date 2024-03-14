@@ -1,9 +1,9 @@
 #displayMsg {
     visibility: hidden;
-    margin-top: 20px;
+    margin-top: 2rem;
     font-weight: 700;
-    height: 1.2em;
-    font-size: 1.2em;
+    height: 2rem;
+    font-size: 2rem;
   }
   
   #displayMsg.success,
