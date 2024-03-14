@@ -41,10 +41,13 @@ function displayMessage(type, message) {
   
     if (userInputName === '') {
       displayMessage('error', 'User cannot be blank');
+      event.preventDefault();            
     } else if (blogInputTitle === '') {
       displayMessage('error', 'Title cannot be blank');
+      event.preventDefault();     
     } else if (blogInputContent === '') {
         displayMessage('error', 'Content cannot be blank');
+        event.preventDefault();       
     } else {
       displayMessage('success', 'Submitted successfully');
       

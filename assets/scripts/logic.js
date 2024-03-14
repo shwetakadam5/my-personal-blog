@@ -18,9 +18,69 @@ function loadFromLocalStorage() {
     console.log(pageTheme);
 
     if (pageTheme == null) {
-
         localStorage.setItem('theme', 'light');
     }
+
+    if(pageTheme == 'dark'){
+        lightModeEl.setAttribute('style', 'display: none');
+    darkModeEl.setAttribute('style', 'display: inline');
+
+    if (headerContainer != null) {
+        headerContainer.classList.add('darkMode');
+    }
+    if (bodyContainer != null) {
+        bodyContainer.classList.add('darkMode');
+    }
+    if (asideContainer != null) {
+        asideContainer.classList.add('darkMode');
+    }
+    if (formContainer != null) {
+        formContainer.classList.add('darkMode');
+    }
+    if (blogContainer != null) {
+        blogContainer.classList.add('darkMode');
+    }
+    if (footerContainer != null) {
+        footerContainer.classList.add('darkMode');
+    }
+    if (submitButtonEl != null) {
+        submitButtonEl.classList.add('darkMode');
+    }
+    if (backButtonEl != null) {
+        backButtonEl.classList.add('darkMode');
+    }
+
+    }else{
+
+        lightModeEl.setAttribute('style', 'display: inline');
+    darkModeEl.setAttribute('style', 'display: none');
+
+    if (headerContainer != null) {
+        headerContainer.classList.remove('darkMode');
+    }
+    if (bodyContainer != null) {
+        bodyContainer.classList.remove('darkMode');
+    }
+    if (asideContainer != null) {
+        asideContainer.classList.remove('darkMode');
+    }
+    if (formContainer != null) {
+        formContainer.classList.remove('darkMode');
+    }
+    if (blogContainer != null) {
+        blogContainer.classList.remove('darkMode');
+    }
+    if (footerContainer != null) {
+        footerContainer.classList.remove('darkMode');
+    }
+    if (submitButtonEl != null) {
+        submitButtonEl.classList.remove('darkMode');
+    }
+    if (backButtonEl != null) {
+        backButtonEl.classList.remove('darkMode');
+    }
+    }
+
 }
 
 
@@ -89,6 +149,7 @@ darkModeEl.addEventListener('click', function () {
     if (backButtonEl != null) {
         backButtonEl.classList.remove('darkMode');
     }
+    window.localStorage.setItem('theme', 'light');
 });
 
 
