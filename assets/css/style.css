@@ -1,3 +1,13 @@
+:root {
+    /* declare a variable with `--` syntax */
+    --dark: black;
+    --light: white;
+    --darkmode-background : dimgrey;
+    --error-color: firebrick;   
+    --pale-light: whitesmoke;
+
+}
+
 *,
 *::before,
 *::after {
@@ -68,9 +78,9 @@ textarea {
     padding: 1rem;
     height: 15%;
     text-align: right;
-    background: white;
-    color: black;
-    border: 0px double black;
+    background: var(--light);
+    color: var(--dark);
+    border: 0px double var(--dark);
     border-width: 0px 0px 5px 0px;
     background-clip: padding-box;
     display: flex;
@@ -80,9 +90,9 @@ textarea {
 }
 
 .header-container.darkMode {
-    background-color: black;
-    color: white;
-    border-color: whitesmoke;
+    background-color: var(--dark);
+    color: var(--light);
+    border-color: var(--pale-light);
 
 }
 
@@ -91,17 +101,17 @@ textarea {
 }
 
 .form-section.darkMode {
-    background-color: dimgrey;
-    color: white;
+    background-color: var(--darkmode-background);
+    color: var(--light);
 }
 
 .body-container.darkMode {
-    background-color: dimgrey;
-    color: white;
+    background-color: var(--darkmode-background);
+    color: var(--light);
 }
 
 aside {
-    border: 0px double black;
+    border: 0px double var(--dark);
     border-width: 0px 5px 0px 0px;
 }
 
@@ -112,9 +122,9 @@ aside {
 }
 
 .side-container.darkMode {
-    background-color: dimgrey;
-    color: white;
-    border-color: white;
+    background-color: var(--darkmode-background);
+    color: var(--light);
+    border-color: var(--light);
 }
 
 .story_shape {
@@ -139,7 +149,7 @@ aside {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: var(--light);
     text-transform: uppercase;
     font-size: 1.7rem;
     text-align: center;
@@ -154,20 +164,20 @@ button {
 }
 
 .back-button {
-    color: white;
-    background-color: black;
+    color: var(--light);
+    background-color: var(--dark);
 }
 
 .back-button.darkMode {
-    color: black;
-    background-color: white;
+    color: var(--dark);
+    background-color: var(--light);
 }
 
 .lightmode-button {
     border: 0px;
     border-radius: 50%;
     color: #fad905;
-    background-color: white;
+    background-color: var(--light);
     display: inline;
 }
 
@@ -175,20 +185,20 @@ button {
     border: 0px;
     border-radius: 50%;
     color: #fad905;
-    background-color: dimgrey;
+    background-color: var(--darkmode-background);
     display: none;
 }
 
 .submit-button {
     margin: 0px;
     width: 50vw;
-    color: white;
-    background-color: black;
+    color: var(--light);
+    background-color: var(--dark);
 }
 
 .submit-button.darkMode {
-    color: white;
-    background-color: black;
+    color: var(--light);
+    background-color: var(--dark);
 }
 
 
@@ -232,9 +242,9 @@ button {
         top: 40%;
         left: 40%;
         transform: translate(-40%, -40%);
-        color: white;
+        color: var(--light);
         text-transform: uppercase;
-        font-size: 1.7rem;
+        font-size: 1.2rem;
         text-align: center;
         backface-visibility: hidden;
     }
@@ -280,7 +290,7 @@ button {
         top: 30%;
         left: 30%;
         transform: translate(-30%, -30%);
-        color: white;
+        color: var(--light);
         text-transform: uppercase;
         font-size: 1.2rem;
         text-align: center;

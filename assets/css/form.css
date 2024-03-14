@@ -11,10 +11,7 @@
     visibility: visible;
   }
   
-  #displayMsg.success {
-    color: #001b44;;
-  }
   
   #displayMsg.error {
-    color: #e6252c;
+    color: var(--error-color);
   }
