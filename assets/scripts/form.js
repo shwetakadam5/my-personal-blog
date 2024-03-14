@@ -65,6 +65,12 @@ function displayMessage(type, message) {
         for (const element of  JSON.parse(localStorage.getItem('blogEntries'))) {
         console.log(element);        
       }          
-
+    
     }
+   
   });
+
+  function redirectTo(url) {
+     window.location.href = url;
+     return false;
+   }
