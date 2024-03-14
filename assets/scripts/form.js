@@ -34,6 +34,9 @@ function displayMessage(type, message) {
     blogtitle: "",
     blogcontent: "",
     };
+
+    msgDiv.textContent = "";
+    msgDiv.removeAttribute('class');
   
     const userInputName = userName.value.trim();
     const blogInputTitle = blogTitle.value.trim();
@@ -58,6 +61,7 @@ function displayMessage(type, message) {
       userName.value = "";
       blogTitle.value ="";
       blogContent.value="";
+     
 
       localStorage.setItem('blogEntries', JSON.stringify(blogEntriesArr));
       console.log( JSON.parse(localStorage.getItem('blogEntries')));
