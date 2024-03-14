@@ -22,7 +22,7 @@ function loadFromLocalStorage() {
 
     if(pageTheme == 'dark'){
 
-        console.log("In Light theme");
+        console.log("In dark theme");
         lightModeEl.setAttribute('style', 'display: none');
     darkModeEl.setAttribute('style', 'display: inline');
 
