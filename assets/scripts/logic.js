@@ -12,8 +12,7 @@ const blogContainer = document.querySelector('.blog-container');
 
 // Function to refresh the local storage and set the default theme to the page.
 function loadFromLocalStorage() {
-    //localStorage.clear();
-
+   
     let pageTheme = localStorage.getItem('theme');
     console.log(pageTheme);
 
