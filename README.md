@@ -2,8 +2,6 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
 - The application is a two page website where users will input and view blog posts.
 - It includes building a content form, dynamically rendering blog posts, and implementing a light/dark mode toggle
 - The implementation of this project helped apply my knowledge on html, css, javascripts, creating and traversing document object model(DOM), Event listeners, Local storage ,windows objects and github for repostitory management.
