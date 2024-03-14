@@ -26,12 +26,31 @@
     font-style: italic;
 }
 
-.blog-container {
-    height: 70vh;
-
+.blog-container {    
+    min-height: 100vh;
 }
 
 .blog-container.darkMode {
     background-color: dimgrey;
     color: white;
+}
+
+
+.blog-entry-details{
+    padding:10px;
+    margin:10px;
+    border: 1px solid black;
+    width :100vw;
+}
+
+.blog-entry-details h5{
+    border: 10px solid black;
+    border-width: 0px 0px 2px 0px;
+}
+
+.blog-entry-details p{
+   font-style: italic;   
+   text-align: justify;
+   margin-left :12px;
+   
 }

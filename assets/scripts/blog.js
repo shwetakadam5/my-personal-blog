@@ -1,34 +1,66 @@
 const blogList = document.querySelector('#blog-list');
 let displayBlogsArr =[];
+let blogDetailsObj = {
+    username: "",
+    blogtitle: "",
+    blogcontent: "",
+    };
+  
 
 // The following function renders items in a blog enteries array as <li> elements
 function renderBlogEntries() {
     
-    // Clear blog-list element 
+    // Clear blog-list element Please check this check
+    if(blogList !=null){
     blogList.innerHTML = '';    
-  console.log(displayBlogsArr);
-    // Render a new li for each blog
+    }   
+    console.log(displayBlogsArr);
+    // Render a new li for each blog in the follwing format
+    // <ul>
+    //         <li>
+    //             <section class ="blog-entry-details">
+    //             <h5>BLOG TITLE</h5>
+    //             <p>
+    //                 My content
+    //             </p>
+    //             <br>
+    //             <p><span>Posted by:</span>Username</p>
+    //         </section>
+    //         </li>
+    //     </ul>   
     for (let i = 0; i < displayBlogsArr.length; i++) {
-      const blog = displayBlogsArr[i];
-  console.log(blog);
-      const li = document.createElement('li');
-      li.textContent = blog;
-      li.setAttribute('data-index', i);      
+      const blogDetailsObj = displayBlogsArr[i];
+      console.log(blogDetailsObj);
       
+      const li = document.createElement('li');
+      const sectionEl = document.createElement('section');
+      sectionEl.setAttribute('class','blog-entry-details');
+      li.appendChild(sectionEl);
+
+      const blogHeaderEl = document.createElement('h5');
+      blogHeaderEl.textContent = blogDetailsObj.blogtitle;
+      sectionEl.appendChild(blogHeaderEl);
+
+      const blogParagraphEl = document.createElement('p');
+      blogParagraphEl.textContent = blogDetailsObj.blogcontent;
+      sectionEl.appendChild(blogParagraphEl);
+
+      const linebreakEl = document.createElement('br');
+      sectionEl.appendChild(linebreakEl);
+
+      const blogParagraph2El = document.createElement('p');    
+
+      blogParagraph2El.textContent ="Posted by:" + blogDetailsObj.username;
+      sectionEl.appendChild(blogParagraph2El);
+
+      li.setAttribute('data-index', i);      
+      if(blogList !=null){
       blogList.appendChild(li);
+      }
     }
   }
 
   function init() {
-    // Get stored blog entries from localStorage
-
-    // console.log( JSON.parse(localStorage.getItem('blogEntries')));
-      
-    //     for (const element of  JSON.parse(localStorage.getItem('blogEntries'))) {
-    //     console.log(element);        
-    //   }    
-
-
     const storedBlogEntries = JSON.parse(localStorage.getItem('blogEntries'));
   
     // If blog entries were retrieved from localStorage, update the displayBlogsArr array to it
