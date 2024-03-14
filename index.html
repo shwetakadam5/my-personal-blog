@@ -43,7 +43,7 @@
         <div class="form-section">
             <section class="form-container">
                 <h4>What's on your mind</h4>
-                <form>
+                <form method="POST" action="./blog.html">
                     <ul>
                         <li>
                             <label for="userName">User Name</label>
@@ -52,19 +52,20 @@
                             <input type="text" name="user-name" id="user-name" placeholder="Jane" />
                         </li>
                         <li>
-                            <label for="title">Title</label>
+                            <label for="blogTitle">Title</label>
                         </li>
                         <li>
-                            <input type="text" name="title" id="title" placeholder="ABSS" />
+                            <input type="text" name="title" id="blog-title" placeholder="Blog Title" />
                         </li>
                         <li>
-                            <label for="content">Content</label>
+                            <label for="blogContent">Content</label>
                         </li>
                         <li>
-                            <textarea id="" name="content"></textarea>
+                            <textarea name="content" id="blog-content" placeholder="Type text here"></textarea>
                         </li>
                     </ul>
                     <button id="submit" class="submit-button">Submit</button>
+                    <div id="displayMsg"></div>
                 </form>
             </section>
         </div>
