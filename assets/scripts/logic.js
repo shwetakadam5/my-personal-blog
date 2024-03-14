@@ -21,6 +21,8 @@ function loadFromLocalStorage() {
     }
 
     if(pageTheme == 'dark'){
+
+        console.log("In Light theme");
         lightModeEl.setAttribute('style', 'display: none');
     darkModeEl.setAttribute('style', 'display: inline');
 
@@ -51,6 +53,7 @@ function loadFromLocalStorage() {
 
     }else{
 
+        console.log("In Light theme");
         lightModeEl.setAttribute('style', 'display: inline');
     darkModeEl.setAttribute('style', 'display: none');
 
@@ -113,7 +116,7 @@ lightModeEl.addEventListener('click', function () {
     if (backButtonEl != null) {
         backButtonEl.classList.add('darkMode');
     }
-
+    console.log("changed theme to dark");
     window.localStorage.setItem('theme', 'dark');
 });
 
@@ -148,6 +151,7 @@ darkModeEl.addEventListener('click', function () {
     if (backButtonEl != null) {
         backButtonEl.classList.remove('darkMode');
     }
+    console.log("changed theme to light");
     window.localStorage.setItem('theme', 'light');
 });
 

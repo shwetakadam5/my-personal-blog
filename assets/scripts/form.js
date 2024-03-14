@@ -15,20 +15,15 @@ function displayMessage(type, message) {
   }
   
   submitFormButton.addEventListener('click', function (event) {
-    //event.preventDefault();
+    
     // create user object from submission
 
     const storedBLogEnteriesArr = JSON.parse(localStorage.getItem('blogEntries'));
-    console.log("storedBLogEnteriesArr");
-    console.log(storedBLogEnteriesArr);
-    if(storedBLogEnteriesArr !=null){
-      console.log("in storedBLogEnteriesArr not null check")
+    
+    if(storedBLogEnteriesArr !=null){      
     blogEntriesArr = storedBLogEnteriesArr;
     }
-
-    console.log("blogEntriesArr");
-    console.log(blogEntriesArr);
-
+   
     const blogDetailsObj = {
     username: "",
     blogtitle: "",
@@ -62,11 +57,7 @@ function displayMessage(type, message) {
      
 
       localStorage.setItem('blogEntries', JSON.stringify(blogEntriesArr));
-      console.log( JSON.parse(localStorage.getItem('blogEntries')));
-      
-        for (const element of  JSON.parse(localStorage.getItem('blogEntries'))) {
-        console.log(element);        
-      }          
+           
     
     }
    
