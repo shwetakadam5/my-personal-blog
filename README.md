@@ -4,10 +4,10 @@
 
 Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+- The application is a two page website where users will input and view blog posts.
+- It includes building a content form, dynamically rendering blog posts, and implementing a light/dark mode toggle
+- The implementation of this project helped apply my knowledge on html, css, javascripts, creating and traversing document object model(DOM), Event listeners, Local storage ,windows objects and github for repostitory management.
+
 
 ## Table of Contents 
 
@@ -67,6 +67,35 @@ Local Storage :
 ![alt text](assets/images/my-blog-Localstorage-blogentries.png)
 
 
+The project folder structure :
+
+my-personal-blog
+├── assets
+│   ├── css
+│   │   ├── blog.css
+│   │   ├── form.css
+    |   ├── reset.css
+│   │   └── style.css
+|   |      
+│   └── scripts
+│   ├   ├── blog.js
+│   |   ├── form.js
+|   |   └── logic.js
+│   | 
+|   ├── images
+│       ├── <images*>.gif
+│       ├── <inages*>.jpeg
+│       └── <images*>.png
+├    
+|
+|
+├── LICENSE
+├── index.html
+├── blog.html
+└── README.md
+
+│    
+
 ## User Story
 
 ```md
@@ -103,26 +132,65 @@ THEN I can see the title, the content, and the author of the post.
 WHEN I view the footer,
 THEN I am presented with a link to the developer's portfolio.
 
-Expected roject file structure :
-
-my-personal-blog
-├── assets
-│   ├── css
-│   │   ├── blog.css
-│   │   ├── form.css
-│   │   └── style.css
-│   └── js
-│       ├── blog.js
-│       ├── form.js
-│       └── logic.js
-├── index.html
-├── blog.html
-└── README.md
 
 ## Tests
 
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+Application behaviour shared in the screenshots above
 
+**Test 1**
+- Click on the Submit button:  
+    If the user name, title and content details are provided by the user:
+         The details will be submitted successfully.
+         The details will be saved in the local storage as an array of JSON Objects.
+         The Blog details will be listed on the next page.
+    If User input is not provided, the page will display an error message: User cannot be blank
+    If Title input is not provided, the page will display an error message: Title cannot be blank    
+    If Content input is not provided, the page will display an error message: Content cannot be blank  
+
+**Test 2**
+- Click on the Sun icon button avaialable on the header of both pages :
+    The theme of the page is toggle between light and dark.
+    On changing to dark theme, the icon will change to a Moon icon button.
+
+**Test 3**
+- Click on the Back button on the header of the Blog List page:
+    The user will be navigated back to the Blog Entry page to input details.
+
+**Test 4**
+- Click on the Portfolio on the footer of the Blog List page:
+    The user will be navigated to the portfolio page of the displayed user name
+- Click on the Blog on the footer of the Blog List page:
+    The user will be navigated to the blogs page of the displayed user name
+- Click on the Email on the footer of the Blog List page:
+    The user will be navigated to the mailto app to send an email
+
+**Test 5**
+- All the user inputs have default text displayed, which can be updated by the user
+
+**Test 6**
+- Hovering on the navigation links display appropriate texts.
+- Hover on the link Portfolio : Hover text will display "Click to navigate to the blogger's portfolio"
+- Hover on the link Blog : Hover text will display "Click to navigate to the blogger's blog page"
+- Hover on the link Email : Hover text will display "Click to send email to shwetakadam5@gmail.com"
+
+**Test 7**
+- Hover on the Back Button : Hover text will display "Click here to navigate Back to the blog input page"
+- Hover on the Sun/Moon Icon theme button : Hover text will display "Click here to toggle between light/dark mode"
+
+**Test 8**
+- Check if appropriate alt text is displayed if the image fails to load for some reason.
+
+**Test 9**
+- Check appropriate headers are displayed for every section.
+
+**Test 10**
+- Check the title of the webpage upon loading
+    Blog Input Page : Blog-Home
+    Blog List Page : Blog-Contents
+
+**Test 11**
+- All the blog details are stored in the local storage as a JSON Object list under the key : blogEntries
+- The theme selected is also saved in local storage under the key :theme
 ## License
 
 MIT
