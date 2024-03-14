@@ -66,7 +66,7 @@ textarea {
 
 .header-container {
     padding: 1rem;
-    height: 15vh;
+    height: 15%;
     text-align: right;
     background: white;
     color: black;
@@ -190,3 +190,100 @@ button {
     color: white;
     background-color: black;
 }
+
+
+/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+@media screen and (max-width: 992px) {
+       
+    /* Incorporated post review comments to make page responsive */
+    main{
+    flex-direction: column;
+    }
+
+    aside{
+        border-width: 0px 0px 5px 0px;
+    }
+    .side-container{
+        width: 100vw;
+        height :70vh;
+    }
+
+
+    .story_shape {
+        width: 40%;
+        height: 50%;
+        -webkit-shape-outside: circle(40% at 40% 40%);
+        shape-outside: circle(40% at 40% 40%);
+        clip-path: circle(40% at 40% 40%);
+        position: relative;
+        margin-top: 30%;
+        margin-left: 20%;
+    }
+    
+    .story_img {
+        height: 75%;
+        transform: translateX(-4rem);
+        backface-visibility: hidden;
+    }
+    
+    .story_caption {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        transform: translate(-40%, -40%);
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        text-align: center;
+        backface-visibility: hidden;
+    }
+    
+        
+    
+  }  
+  
+  @media screen and (max-width: 768px) {    
+    
+    main{
+        flex-direction: column;
+        }
+
+        aside{
+            border-width: 0px 0px 5px 0px;
+        }
+        .side-container{
+            width: 100vw;
+            height :50vh;
+        }
+        
+        .story_shape {
+            width: 30%;
+            height: 50%;
+            -webkit-shape-outside: circle(30% at 30% 30%);
+            shape-outside: circle(30% at 30% 30%);
+            clip-path: circle(30% at 30% 30%);
+            position: relative;
+            margin-top: 30%;
+            margin-left: 20%;
+        }
+        
+        .story_img {
+            height: 75%;
+            transform: translateX(-4rem);
+            backface-visibility: hidden;
+        }
+        
+        .story_caption {
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            transform: translate(-30%, -30%);
+            color: white;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            text-align: center;
+            backface-visibility: hidden;
+        }
+       
+          
+  }
