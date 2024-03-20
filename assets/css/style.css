@@ -246,6 +246,7 @@ button {
         color: var(--light);
         text-transform: uppercase;
         font-size: 1.2rem;
+        font-style: oblique;
         text-align: center;
         backface-visibility: hidden;
     }
